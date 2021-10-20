@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.pvsb.newsapiapp.data.repository.Repository
 import com.pvsb.newsapiapp.data.response.NewsBodyResponse
-import com.pvsb.newsapiapp.model.NewsEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
