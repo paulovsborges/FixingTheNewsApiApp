@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         observeViewModel()
         setListener()
         initiateListener()
-        refreshPage()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -71,6 +70,12 @@ class MainActivity : AppCompatActivity() {
                 super.onOptionsItemSelected(item)
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        refreshPage()
+        observeViewModel()
     }
 
     private fun refreshPage() {
